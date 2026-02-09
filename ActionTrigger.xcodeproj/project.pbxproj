@@ -11,7 +11,6 @@
 		C6F6E9D22F39C9140086AB28 /* RuleDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F6E9D02F39C9140086AB28 /* RuleDetailView.swift */; };
 		C6F6E9D32F39C9140086AB28 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F6E9CE2F39C9140086AB28 /* App.swift */; };
 		C6F6E9D42F39C9140086AB28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F6E9CF2F39C9140086AB28 /* ContentView.swift */; };
-		C6F6E9D62F39C9140086AB28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F6E9CA2F39C9140086AB28 /* Preview Assets.xcassets */; };
 		C6F6E9D92F39C93A0086AB28 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F6E9D82F39C93A0086AB28 /* FinderSync.swift */; };
 		C6F6E9DD2F39C9530086AB28 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F6E9DC2F39C9530086AB28 /* main.swift */; };
 		C6F6E9DE2F39C9530086AB28 /* ActionTriggerHelperXPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F6E9DA2F39C9530086AB28 /* ActionTriggerHelperXPC.swift */; };
@@ -19,6 +18,7 @@
 		C6F6E9E02F39C99F0086AB28 /* ActionTriggerHelperXPCProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F6E9DB2F39C9530086AB28 /* ActionTriggerHelperXPCProtocol.swift */; };
 		C6F6E9E22F39D19B0086AB28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F6E9E12F39D19B0086AB28 /* Assets.xcassets */; };
 		C6F6E9E42F39D4DC0086AB28 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = C6F6E9E32F39D4DC0086AB28 /* AppIcon.icon */; };
+		C6F6E9E72F39DAC50086AB28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6F6E9E52F39DAC50086AB28 /* Preview Assets.xcassets */; };
 		C7A1C0023B00000100000001 /* ActionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C0013B00000100000001 /* ActionConfig.swift */; };
 		C7A1C0033B00000100000001 /* ActionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1C0013B00000100000001 /* ActionConfig.swift */; };
 		C7A1C0053B00000100000001 /* ActionTriggerHelperXPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = C6B7BFA729F1919400FE1290 /* ActionTriggerHelperXPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -84,7 +84,6 @@
 		C6CCD98929EB397800E86612 /* FinderExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = FinderExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6CCD98D29EB397800E86612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6CCD98E29EB397800E86612 /* FinderExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FinderExtension.entitlements; sourceTree = "<group>"; };
-		C6F6E9CA2F39C9140086AB28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Preview Assets.xcassets"; path = "Resources/Preview Content/Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6F6E9CE2F39C9140086AB28 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		C6F6E9CF2F39C9140086AB28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C6F6E9D02F39C9140086AB28 /* RuleDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuleDetailView.swift; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 		C6F6E9DC2F39C9530086AB28 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		C6F6E9E12F39D19B0086AB28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C6F6E9E32F39D4DC0086AB28 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		C6F6E9E52F39DAC50086AB28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7A1C0013B00000100000001 /* ActionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,19 +174,11 @@
 			path = FinderExtension;
 			sourceTree = "<group>";
 		};
-		C6F6E9CB2F39C9140086AB28 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				C6F6E9CA2F39C9140086AB28 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
 		C6F6E9CD2F39C9140086AB28 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C6F6E9E62F39DAC50086AB28 /* Preview Content */,
 				C6F6E9E12F39D19B0086AB28 /* Assets.xcassets */,
-				C6F6E9CB2F39C9140086AB28 /* Preview Content */,
 				C6F6E9E32F39D4DC0086AB28 /* AppIcon.icon */,
 			);
 			path = Resources;
@@ -200,6 +192,14 @@
 				C6F6E9D02F39C9140086AB28 /* RuleDetailView.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		C6F6E9E62F39DAC50086AB28 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C6F6E9E52F39DAC50086AB28 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		C7A1C0043B00000100000001 /* Shared */ = {
@@ -336,7 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6F6E9E22F39D19B0086AB28 /* Assets.xcassets in Resources */,
-				C6F6E9D62F39C9140086AB28 /* Preview Assets.xcassets in Resources */,
+				C6F6E9E72F39DAC50086AB28 /* Preview Assets.xcassets in Resources */,
 				C6F6E9E42F39D4DC0086AB28 /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
