@@ -34,36 +34,15 @@ jobs:
             -scheme "$SCHEME" \
             -configuration "$CONFIGURATION" \
             -archivePath "$ARCHIVE_PATH" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_IDENTITY="" \
             archive
-
-      - name: Export app (unsigned)
-        run: |
-          set -euo pipefail
-          cat > exportOptions.plist <<'PLIST'
-          <?xml version="1.0" encoding="UTF-8"?>
-          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-          <plist version="1.0">
-          <dict>
-            <key>signingStyle</key>
-            <string>manual</string>
-            <key>signingCertificate</key>
-            <string></string>
-            <key>stripSwiftSymbols</key>
-            <true/>
-          </dict>
-          </plist>
-          PLIST
-
-          xcodebuild \
-            -exportArchive \
-            -archivePath "$ARCHIVE_PATH" \
-            -exportPath "$EXPORT_PATH" \
-            -exportOptionsPlist exportOptions.plist
 
       - name: Create DMG
         run: |
           set -euo pipefail
-          APP_PATH="$EXPORT_PATH/$APP_NAME.app"
+          APP_PATH="$ARCHIVE_PATH/Products/Applications/$APP_NAME.app"
           hdiutil create \
             -volname "$APP_NAME" \
             -srcfolder "$APP_PATH" \
