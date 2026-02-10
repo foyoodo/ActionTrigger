@@ -83,7 +83,7 @@ public struct ActionConfig: Codable, Equatable {
 }
 
 public enum ActionConfigDefaults {
-    public static let appGroupID = "com.foyoodo.ActionTrigger.Groups"
+    public static let appGroupID = "group.com.foyoodo.ActionTrigger"
     public static let fileName = "action-config.json"
 
     public static func defaultConfig() -> ActionConfig {

@@ -124,7 +124,7 @@ final class FinderSync: FIFinderSync {
     }
 
     private func openWithHelper(url: URL, appPath: String) {
-        let connection = NSXPCConnection(serviceName: "com.foyoodo.ActionTriggerHelperXPC")
+        let connection = NSXPCConnection(serviceName: "com.foyoodo.ActionTrigger.xpc")
         connection.remoteObjectInterface = NSXPCInterface(with: ActionTriggerHelperXPCProtocol.self)
         connection.resume()
 
